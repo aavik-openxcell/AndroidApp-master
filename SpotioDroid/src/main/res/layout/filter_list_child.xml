@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView_filterName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    tools:text="Filter"
+    android:textAppearance="?android:attr/textAppearanceListItem"
+    android:textColor="#666"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:paddingLeft="32dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" />

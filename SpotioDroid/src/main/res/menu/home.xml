@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.icanvass.activities.HomeActivity" >
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_filter">
+    </item>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_new"
+        app:showAsAction="ifRoom"
+        android:title="@string/share">
+    </item>
+</menu>

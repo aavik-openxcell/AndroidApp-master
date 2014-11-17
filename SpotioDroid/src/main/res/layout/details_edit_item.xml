@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <Button
+        android:id="@+id/imgv_add"
+        android:layout_width="@dimen/btn_add_minus"
+        android:layout_height="@dimen/btn_add_minus"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/imgv_remove"
+        android:layout_width="@dimen/btn_add_minus"
+        android:layout_height="@dimen/btn_add_minus"
+        android:layout_toLeftOf="@id/imgv_add"
+        android:text="-"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:inputType="textCapWords|textMultiLine"
+        android:maxLines="20"
+        android:layout_toLeftOf="@id/imgv_remove"
+        android:singleLine="false"/>
+</RelativeLayout>

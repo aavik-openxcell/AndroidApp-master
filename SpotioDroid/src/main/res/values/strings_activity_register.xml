@@ -1,0 +1,10 @@
+<resources>
+        <string name="title_activity_register">Register</string>
+    <string name="register_action_register">Register</string>
+    <string name="register_prompt_password">Password</string>
+    <string name="prompt_full_name">Full Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_company_name">Company Name</string>
+    <string name="prompt_phone_number">Phone Number</string>
+
+</resources>

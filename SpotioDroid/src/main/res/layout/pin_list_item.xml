@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/rectangle_background"
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+
+        android:background="@android:color/white"/>
+    <View
+        android:id="@+id/rectangle"
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+
+        android:background="@drawable/rectangle"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
+        android:text="@string/loading"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_toLeftOf="@id/tvDateTime"
+        android:layout_toStartOf="@id/tvDateTime"
+        android:layout_toRightOf="@+id/rectangle"
+        android:layout_toEndOf="@id/rectangle"/>
+
+    <TextView
+        android:id="@+id/tvCity"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="#888"
+        android:text="@string/loading"
+        android:layout_below="@+id/tvAddress"
+
+        android:layout_toEndOf="@+id/rectangle"
+        android:layout_toRightOf="@+id/rectangle"
+        android:layout_toLeftOf="@id/tvDateTime"
+        android:layout_toStartOf="@id/tvDateTime"
+
+        android:singleLine="true"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tvDateTime"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:text="@string/loading"
+        android:layout_centerVertical="true"
+        android:maxWidth="100dp"
+
+        android:textSize="16sp"
+        android:gravity="end" />
+</RelativeLayout>

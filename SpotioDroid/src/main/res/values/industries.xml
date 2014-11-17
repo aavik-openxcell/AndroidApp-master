@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industries">
+        <item>your industry..</item>
+        <item>Home Improvement</item>
+        <item>Cable/Satellite</item>
+        <item>Alarm</item>
+        <item>Real Estate</item>
+        <item>Non-Profit</item>
+        <item>Political</item>
+        <item>Investments</item>
+        <item>Other</item>
+    </string-array>
+</resources>

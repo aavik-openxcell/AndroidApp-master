@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.icanvass.activities.FilterActivity" >
+    <!--<item android:id="@+id/action_add_edit_cancel"-->
+        <!--android:title="@string/action_cancel"-->
+        <!--app:showAsAction="always" />-->
+    <item android:id="@+id/action_add_edit_save"
+        android:title="@string/action_save"
+        app:showAsAction="always" />
+</menu>

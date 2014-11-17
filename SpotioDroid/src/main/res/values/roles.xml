@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles">
+        <item>your role..</item>
+        <item>Manager</item>
+        <item>Owner</item>
+        <item>Sales Rep</item>
+        <item>Canvasser</item>
+    </string-array>
+</resources>

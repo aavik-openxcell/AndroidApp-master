@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.icanvass.activities.DetailsActivity" >
+    <!--<item android:id="@+id/action_settings"-->
+        <!--android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never" />-->
+    <item
+        android:id="@+id/view_map"
+        android:icon="@drawable/ic_map"
+        app:showAsAction="always"
+        android:title="@string/view_map">
+    </item>
+    <item
+        android:id="@+id/edit_item"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="always"
+        android:title="@string/edit_item">
+    </item>
+    <!--<item-->
+        <!--android:id="@+id/edit_accept"-->
+        <!--android:icon="@drawable/ic_accept"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="@string/edit_accept">-->
+    <!--</item>-->
+</menu>

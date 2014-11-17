@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="employees">
+        <item>employees..</item>
+        <item>1 -10</item>
+        <item>11 - 50</item>
+        <item>51 - 100</item>
+        <item>100+</item>
+    </string-array>
+</resources>
