@@ -814,8 +814,9 @@ public class MapFragment extends SupportMapFragment implements LocationListener,
         protected boolean shouldRenderAsCluster(Cluster<AbstractMarker> cluster) {
 //            Log.e(TAG,"======shouldRenderAsCluster========");
             if (lastCameraPosition != null) {
-//              condition for cluster, if pins lenght are greater than 2 then its become a cluster.
-                boolean enoughItemsToCluster = cluster.getSize() >= 5;
+//              condition for cluster, if pins lenght are greater than 10 then its become a cluster.
+//                boolean enoughItemsToCluster = cluster.getSize() >= 5;
+                boolean enoughItemsToCluster = cluster.getSize() >= 10;
 //                Log.e(TAG,"======enoughItemsToCluster========"+enoughItemsToCluster);
 
 //                return lastCameraPosition.zoom < CLUSTERING_ZOOM_OUT_THRESHOLD && enoughItemsToCluster;
