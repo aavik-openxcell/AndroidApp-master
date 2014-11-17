@@ -89,7 +89,8 @@ public class CustomClusterRenderer<T extends ClusterItem> implements ClusterRend
     /**
      * If cluster size is less than this size, display individual markers.
      */
-    private static final int MIN_CLUSTER_SIZE = 5;
+//    private static final int MIN_CLUSTER_SIZE = 5;
+    private static final int MIN_CLUSTER_SIZE = 10;
 
     /**
      * The currently displayed set of clusters.
