@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newrelic'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 62
+        versionName '1.2.9'
+    }
+    buildTypes {
+        release {
+            runProguard false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            zipAlign true
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    productFlavors {
+    }
+
+    signingConfigs {
+//        debug {
+//            storeFile file("debug.keystore")
+//            storePassword "android"
+//            keyAlias "Spotio"
+//            keyPassword "spotio"
+//        }
+//        release {
+//            storeFile file("debug.keystore")
+//            storePassword "android"
+//            keyAlias "Spotio"
+//            keyPassword "spotio"
+//        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // You must install or update the Google Repository through the SDK manager to use this dependency.
+    //compile 'com.google.android.gms:play-services:4.2.42'
+    compile 'com.android.support:support-v13:19.0.1'
+    compile 'com.android.support:appcompat-v7:19.1+'
+    compile 'com.google.android.gms:play-services:4.2.42'
+    compile 'com.androidmapsextensions:android-maps-extensions:2.1.+';
+    compile 'com.octo.android.robospice:robospice:1.4.12'
+    compile 'com.octo.android.robospice:robospice-spring-android:1.4.12'
+    compile 'com.mixpanel.android:mixpanel-android:4.2.1@aar'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    compile 'com.google.maps.android:android-maps-utils:0.3+'
+    compile 'com.newrelic.agent.android:android-agent:3.+'
+    compile files('libs/svg-android-1.1.jar')
+    compile files('libs/gson-2.2.4.jar')
+}
